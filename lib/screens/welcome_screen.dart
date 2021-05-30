@@ -1,7 +1,7 @@
 import 'package:flash_chat/screens/login_screen.dart';
 import 'package:flash_chat/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
-//2021-05-30 залил проект на github.
+//2021-05-30 залил проект на github.!!!!
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen'; //добавили в перем-ю static
 
