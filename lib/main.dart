@@ -11,11 +11,15 @@ class FlashChat extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        textTheme: TextTheme(
-          body1: TextStyle(color: Colors.black54),
-        ),
-      ),
-      home: WelcomeScreen(),
+          textTheme: TextTheme(bodyText2: TextStyle(color: Colors.black54))),
+      initialRoute: WelcomeScreen.id, //убрали скобки, т.к. это уже static
+      routes: {
+        WelcomeScreen.id: (context) => WelcomeScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+        RegistrationScreen.id:(context) => RegistrationScreen(),
+        ChatScreen.id:(context)=>ChatScreen()
+      }, //заменили все текстовые назв-я на static перем-е класса id
     );
   }
 }
+
